@@ -37,6 +37,7 @@ namespace LaCalculadoradeEdwin
         {
             InitializeComponent();
             textBox1.Text = 0.ToString();
+            //prueba
 
 
 
