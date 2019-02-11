@@ -21,3 +21,10 @@ D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.cspr
 C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe.config
 C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.exe
 C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.pdb
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.pdb
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csprojResolveAssemblyReference.cache
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form1.resources
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form2.resources
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Properties.Resources.resources
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csproj.GenerateResource.Cache
