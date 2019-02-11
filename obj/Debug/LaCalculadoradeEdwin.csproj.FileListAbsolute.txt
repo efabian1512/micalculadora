@@ -1,0 +1,23 @@
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe.config
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.pdb
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csprojResolveAssemblyReference.cache
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form1.resources
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Properties.Resources.resources
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csproj.GenerateResource.Cache
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.exe
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.pdb
+c:\users\edwin\documents\visual studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form2.resources
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe.config
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.exe
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.pdb
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.pdb
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csprojResolveAssemblyReference.cache
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form1.resources
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Form2.resources
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.Properties.Resources.resources
+D:\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.csproj.GenerateResource.Cache
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\bin\Debug\LaCalculadoradeEdwin.exe.config
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.exe
+C:\Users\efabian\Documents\Visual Studio 2015\Projects\LaCalculadoradeEdwin\LaCalculadoradeEdwin\obj\Debug\LaCalculadoradeEdwin.pdb
