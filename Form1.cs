@@ -788,6 +788,7 @@ namespace LaCalculadoradeEdwin
                 if (textBox1.Text == resultado.ToString())
                 {
                     operacion = operaciones.resta;
+                    textBox2.Text = textBox1.Text + " - ";
 
                 }
                 else
@@ -807,9 +808,19 @@ namespace LaCalculadoradeEdwin
                 }
                 else
                 {
+                    if(textBox2.Text== textBox2.Text + " - ")
+                    {
+                        textBox2.Text = textBox2.Text + textBox1.Text;
+                        Restando();
+                        //igual.PerformClick();
+                        primervalor = resultado;
+                    }else {
+
                     textBox2.Text = textBox2.Text + " - " + textBox1.Text;
-                    igual.PerformClick();
+                    Restando();
+                    //igual.PerformClick();
                     primervalor = resultado;
+                    }
 
 
                 }
@@ -1221,6 +1232,37 @@ namespace LaCalculadoradeEdwin
                 }
             }
         }
+        public void Restando()
+        {
+            lista.Add(primervalor);
+            lista.Add(int.Parse(textBox1.Text));
+            if (resultado != 0)
+            {
+                double resta = 0;
+                resta = resultado - int.Parse(textBox1.Text);
+                resultado = resta;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                //operacion = operaciones.nada;
+
+            }
+            else
+            {
+                double resta = lista[0] - lista[1];
+
+                resultado = resta;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                //operacion = operaciones.nada;
+
+            }
+        
+           
+            
+            
+        }
+
+    
 
         private void historial_Click(object sender, EventArgs e)
         {
