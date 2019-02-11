@@ -282,6 +282,7 @@ namespace LaCalculadoradeEdwin
             {
                 operacion = operaciones.suma;
                 //textBox2.Text = textBox2.Text +" + "+ textBox1.Text;
+                textBox2.Text = textBox1.Text + " + ";
 
 
 
@@ -301,12 +302,23 @@ namespace LaCalculadoradeEdwin
                 textBox2.Text = textBox1.Text;
                 }else
                 {
+                    if (textBox2.Text == resultado.ToString() + " + ")
+                    {
+                        textBox2.Text = textBox2.Text + textBox1.Text;
+                        sumando();
+                        //igual.PerformClick();
+                        primervalor = resultado;
+
+                    }
+                    else { 
+                        
                     textBox2.Text= textBox2.Text+" + " +textBox1.Text;
                     sumando();
                     //igual.PerformClick();
                     primervalor = resultado;
+                    }
 
-                        
+
                 }
                 //}
 
