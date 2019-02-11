@@ -270,7 +270,9 @@ namespace LaCalculadoradeEdwin
 
             }
 
+
             this.ActiveControl = null;
+                textBox2.Text = "";
         }
 
         private void sumar_Click(object sender, EventArgs e)
@@ -300,7 +302,8 @@ namespace LaCalculadoradeEdwin
                 }else
                 {
                     textBox2.Text= textBox2.Text+" + " +textBox1.Text;
-                    igual.PerformClick();
+                    sumando();
+                    //igual.PerformClick();
                     primervalor = resultado;
 
                         
@@ -1163,6 +1166,48 @@ namespace LaCalculadoradeEdwin
 
             }
 
+        }
+        public void sumando()
+        {
+            if (operacion == operaciones.suma)
+            {
+                /*string cadena = textBox2.Text;
+               
+                if (cadena.Length > 2)
+                {
+                    for(int i = 0; i < cadena.Length; i++)
+                    {
+                        lista3.Add(double.Parse(char.Tcadena.ElementAt(i)); 
+                    }
+                }*/
+
+                if (resultado != 0)
+                {
+                    double suma = 0;
+                    suma = resultado + int.Parse(textBox1.Text);
+                    resultado = suma;
+                    textBox1.Text = resultado.ToString();
+                    lista2.Clear();
+                    //operacion = operaciones.nada;
+
+                }
+                else
+                {
+                    lista.Add(primervalor);
+                    lista.Add(double.Parse(textBox1.Text));
+                    double suma = 0;
+                    for (int i = 0; i < lista.Count; i++)
+                    {
+
+                        suma = suma + lista[i];
+                    }
+                    resultado = suma;
+                    textBox1.Text = resultado.ToString();
+                    lista2.Clear();
+                    //operacion = operaciones.nada;
+
+                }
+            }
         }
 
         private void historial_Click(object sender, EventArgs e)
