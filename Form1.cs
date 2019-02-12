@@ -69,116 +69,25 @@ namespace LaCalculadoradeEdwin
         {
             if (operacion == operaciones.suma)
             {               
-                if (resultado != 0)
-                {
-                    double suma = 0;
-                    suma = resultado + int.Parse(textBox1.Text);
-                    resultado = suma;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    //operacion = operaciones.nada;
+               
+                    //operacion = operaciones.nada
+                    sumando();
 
                 }
-                else
-                {
-                    lista.Add(primervalor);
-                    lista.Add(double.Parse(textBox1.Text));
-                    double suma = 0;
-                    for (int i = 0; i < lista.Count; i++)
-                    {
-
-                        suma = suma + lista[i];
-                    }
-                    resultado = suma;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    //operacion = operaciones.nada;
-
-                }
-            }
+            
             if (operacion == operaciones.resta)
             {
-                lista.Add(primervalor);
-                lista.Add(int.Parse(textBox1.Text));
-                if (resultado != 0)
-                {
-                    double resta = 0;
-                    resta = resultado - int.Parse(textBox1.Text);
-                    resultado = resta;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    //operacion = operaciones.nada;
+                Restando();
 
                 }
-                else
-                {
-                    double resta = lista[0] - lista[1];
 
-                    resultado = resta;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    //operacion = operaciones.nada;
-
-                }
-            }
             if (operacion == operaciones.producto)
             {
-                lista.Add(primervalor);
-                lista.Add(int.Parse(textBox1.Text));
-                if (resultado != 0)
-                {
-                    double producto = 0;
-                    producto = resultado * int.Parse(textBox1.Text);
-                    resultado = producto;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    operacion = operaciones.nada;
-
-                }
-                else
-                {
-                    double producto = 1;
-                    for (int i = 0; i < lista.Count; i++)
-                    {
-
-                        producto = producto * lista[i];
-                    }
-                    resultado = producto;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    operacion = operaciones.nada;
-
-                }
-
+                Multiplicando();
             }
             if (operacion == operaciones.division)
             {
-                lista.Add(primervalor);
-                lista.Add(int.Parse(textBox1.Text));
-                if (resultado != 0)
-                {
-                    double cociente = 0;
-                    cociente = resultado / int.Parse(textBox1.Text);
-                    resultado = cociente;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    operacion = operaciones.nada;
-
-                }
-                else
-                {
-                    double cociente;
-                    //for (int i = 0; i < lista.Count; i++)
-                    //{
-
-                    cociente = lista[0] / lista[1];
-                    //}
-                    resultado = cociente;
-                    textBox1.Text = resultado.ToString();
-                    lista2.Clear();
-                    operacion = operaciones.nada;
-
-                }
+                Dividiendo();
             }
             if (operacion == operaciones.porcentaje)
             {
@@ -219,6 +128,7 @@ namespace LaCalculadoradeEdwin
             this.ActiveControl = null;
                 textBox2.Text = "";
         }
+            
 
         private void sumar_Click(object sender, EventArgs e)
         {
@@ -427,13 +337,49 @@ namespace LaCalculadoradeEdwin
             if (textBox1.Text == resultado.ToString())
             {
                 operacion = operaciones.producto;
+                textBox2.Text = textBox1.Text + " x ";
 
             }
             else
-            {
+                /*{
+                    operacion = operaciones.producto;
+                    primervalor = (double.Parse(textBox1.Text));
+                }*/
                 operacion = operaciones.producto;
+            if (textBox2.Text == "")
+            {
                 primervalor = (double.Parse(textBox1.Text));
+                //lista3.Add(primervalor);
+
+
+
+
+                textBox2.Text = textBox1.Text;
             }
+            else
+            {
+                if (textBox2.Text == resultado.ToString() + " x ")
+                {
+                    textBox2.Text = textBox2.Text + textBox1.Text;
+                    Multiplicando();
+                    //igual.PerformClick();
+                    primervalor = resultado;
+
+                }
+                else
+                {
+
+                    textBox2.Text = textBox2.Text + " x " + textBox1.Text;
+                    Multiplicando();
+                    //igual.PerformClick();
+                    primervalor = resultado;
+                }
+
+
+            }
+            //}
+
+        
             this.ActiveControl = null;
 
         }
@@ -849,6 +795,66 @@ namespace LaCalculadoradeEdwin
            
             
             
+        }
+        public void Multiplicando()
+        {
+            lista.Add(primervalor);
+            lista.Add(int.Parse(textBox1.Text));
+            if (resultado != 0)
+            {
+                double producto = 0;
+                producto = resultado * int.Parse(textBox1.Text);
+                resultado = producto;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                operacion = operaciones.nada;
+
+            }
+            else
+            {
+                double producto = 1;
+                for (int i = 0; i < lista.Count; i++)
+                {
+
+                    producto = producto * lista[i];
+                }
+                resultado = producto;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                operacion = operaciones.nada;
+
+            }
+
+        }
+        public void Dividiendo()
+        {
+            lista.Add(primervalor);
+            lista.Add(int.Parse(textBox1.Text));
+            if (resultado != 0)
+            {
+                double cociente = 0;
+                cociente = resultado / int.Parse(textBox1.Text);
+                resultado = cociente;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                operacion = operaciones.nada;
+
+            }
+            else
+            {
+                double cociente;
+                //for (int i = 0; i < lista.Count; i++)
+                //{
+
+                cociente = lista[0] / lista[1];
+                //}
+                resultado = cociente;
+                textBox1.Text = resultado.ToString();
+                lista2.Clear();
+                operacion = operaciones.nada;
+
+            }
+
         }
         public void Boton(double valor)
         {
