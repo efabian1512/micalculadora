@@ -22,12 +22,12 @@ namespace LaCalculadoradeEdwin
         public List<double> lista3 = new List<double>();
         double primervalor;
         operaciones opporcentaje;
-
-
-
-
-
         public double resultado = 0;
+
+
+
+
+
 
 
 
@@ -48,82 +48,27 @@ namespace LaCalculadoradeEdwin
 
            
             this.ActiveControl = null;
-
-
-
-
-
-
-
-
-
         }
+
+
+
+
+
+
+
+
+
 
         private void uno_Click(object sender, EventArgs e)
         {
             double valor = 1;
-
-
-
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
-
+            Boton(valor);
         }
 
         private void igual_Click(object sender, EventArgs e)
         {
             if (operacion == operaciones.suma)
-            {
-                /*string cadena = textBox2.Text;
-               
-                if (cadena.Length > 2)
-                {
-                    for(int i = 0; i < cadena.Length; i++)
-                    {
-                        lista3.Add(double.Parse(char.Tcadena.ElementAt(i)); 
-                    }
-                }*/
-                
+            {               
                 if (resultado != 0)
                 {
                     double suma = 0;
@@ -162,7 +107,7 @@ namespace LaCalculadoradeEdwin
                     resultado = resta;
                     textBox1.Text = resultado.ToString();
                     lista2.Clear();
-                    operacion = operaciones.nada;
+                    //operacion = operaciones.nada;
 
                 }
                 else
@@ -172,7 +117,7 @@ namespace LaCalculadoradeEdwin
                     resultado = resta;
                     textBox1.Text = resultado.ToString();
                     lista2.Clear();
-                    operacion = operaciones.nada;
+                    //operacion = operaciones.nada;
 
                 }
             }
@@ -345,48 +290,8 @@ namespace LaCalculadoradeEdwin
         private void dos_Click(object sender, EventArgs e)
         {
             double valor = 2;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
+           
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -407,378 +312,52 @@ namespace LaCalculadoradeEdwin
         private void tres_Click(object sender, EventArgs e)
         {
             double valor = 3;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void cuatro_Click(object sender, EventArgs e)
         {
             double valor = 4;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void cinco_Click(object sender, EventArgs e)
         {
             double valor = 5;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
+            
         }
 
         private void seis_Click(object sender, EventArgs e)
         {
             double valor = 6;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void siete_Click(object sender, EventArgs e)
         {
             double valor = 7;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void ocho_Click(object sender, EventArgs e)
         {
             double valor = 8;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void nueve_Click(object sender, EventArgs e)
         {
             double valor = 9;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
 
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
 
         }
 
         private void cero_Click(object sender, EventArgs e)
         {
             double valor = 0;
-            if (operacion == operaciones.nada)
-            {
-                if (textBox1.Text == 0.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                }
-                else if (textBox1.Text == resultado.ToString())
-                {
-                    textBox1.Text = valor.ToString();
-                    resultado = 0;
-                    lista.Clear();
-                    operacion = operaciones.nada;
-                }
-                else
-                {
-                    textBox1.Text = textBox1.Text + valor.ToString();
-                }
-
-            }
-            else
-            {
-                if (textBox1.Text != 0.ToString())
-                {
-                    if (lista2.Count() == 0)
-                    {
-
-                        textBox1.Text = valor.ToString();
-                        lista2.Add(valor);
-                    }
-                    else
-                    {
-                        textBox1.Text = textBox1.Text + valor.ToString();
-                    }
-
-                }
-                else
-                {
-                    textBox1.Text = valor.ToString();
-
-                }
-            }
-            this.ActiveControl = null;
+            Boton(valor);
         }
 
         private void restar_Click(object sender, EventArgs e)
@@ -789,6 +368,16 @@ namespace LaCalculadoradeEdwin
                 {
                     operacion = operaciones.resta;
                     textBox2.Text = textBox1.Text + " - ";
+
+                    /* if (textBox2.Text == "")
+                     {
+
+
+                     }
+                     else
+                     {
+
+                     }*/
 
                 }
                 else
@@ -808,13 +397,13 @@ namespace LaCalculadoradeEdwin
                 }
                 else
                 {
-                    if(textBox2.Text== textBox2.Text + " - ")
+                    if(textBox2.Text== resultado.ToString() + " - ")
                     {
-                        textBox2.Text = textBox2.Text + textBox1.Text;
+                        //textBox2.Text = textBox2.Text + textBox1.Text;
                         Restando();
                         //igual.PerformClick();
                         primervalor = resultado;
-                    }else {
+                    }else if(textBox2.Text!= resultado.ToString() + " - ") {
 
                     textBox2.Text = textBox2.Text + " - " + textBox1.Text;
                     Restando();
@@ -1260,6 +849,51 @@ namespace LaCalculadoradeEdwin
            
             
             
+        }
+        public void Boton(double valor)
+        {
+            if (operacion == operaciones.nada)
+            {
+                if (textBox1.Text == 0.ToString())
+                {
+                    textBox1.Text = valor.ToString();
+                }
+                else if (textBox1.Text == resultado.ToString())
+                {
+                    textBox1.Text = valor.ToString();
+                    resultado = 0;
+                    lista.Clear();
+                    operacion = operaciones.nada;
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + valor.ToString();
+                }
+
+            }
+            else
+            {
+                if (textBox1.Text != 0.ToString())
+                {
+                    if (lista2.Count() == 0)
+                    {
+
+                        textBox1.Text = valor.ToString();
+                        lista2.Add(valor);
+                    }
+                    else
+                    {
+                        textBox1.Text = textBox1.Text + valor.ToString();
+                    }
+
+                }
+                else
+                {
+                    textBox1.Text = valor.ToString();
+
+                }
+            }
+            this.ActiveControl = null;
         }
 
     
