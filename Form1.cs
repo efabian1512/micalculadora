@@ -71,7 +71,7 @@ namespace LaCalculadoradeEdwin
             {               
                
                     //operacion = operaciones.nada
-                    sumando();
+                    Sumando();
 
                 }
             
@@ -160,7 +160,7 @@ namespace LaCalculadoradeEdwin
                     if (textBox2.Text == resultado.ToString() + " + ")
                     {
                         textBox2.Text = textBox2.Text + textBox1.Text;
-                        sumando();
+                        Sumando();
                         //igual.PerformClick();
                         primervalor = resultado;
 
@@ -168,7 +168,7 @@ namespace LaCalculadoradeEdwin
                     else { 
                         
                     textBox2.Text= textBox2.Text+" + " +textBox1.Text;
-                    sumando();
+                    Sumando();
                     //igual.PerformClick();
                     primervalor = resultado;
                     }
@@ -725,7 +725,7 @@ namespace LaCalculadoradeEdwin
             }
 
         }
-        public void sumando()
+        public void Sumando()
         {
             if (operacion == operaciones.suma)
             {
